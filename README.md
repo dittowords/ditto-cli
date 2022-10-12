@@ -7,8 +7,8 @@ The Ditto CLI helps teams integrate [Ditto](https://dittowords.com/) into their 
 You can install the CLI from npm:
 
 ```bash
-# as a dev dependency (recommended)
-npm install --save-dev @dittowords/cli
+# as a project dependency (recommended)
+npm install --save @dittowords/cli
 
 # as a global package
 npm install --global @dittowords/cli
