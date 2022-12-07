@@ -1,4 +1,5 @@
 import axios from "axios";
+import https from "https";
 
 import config from "./config";
 import consts from "./consts";
@@ -9,6 +10,10 @@ export const create = (token?: string) => {
     headers: {
       Authorization: `token ${token}`,
     },
+    httpsAgent: new https.Agent({
+      requestCert: true,
+      rejectUnauthorized: false,
+    }),
   });
 };
 
